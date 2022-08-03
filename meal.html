@@ -5,12 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Khabar</title>
+    <!-- <style>
+        .foodie {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style> -->
 </head>
 
 <body>
-    <h1>Khabar</h1>
-    <script src="js/meal.js"></script>
+    <h1 class="text-center mt-2">Khabar</h1>
+    <!-- search bar  -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="Search food you want"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchFood()" class="btn btn-outline-secondary bg-success text-white" type="button"
+            id="button-addon2">Search</button>
+    </div>
+    <div id="foods" class="row row-cols-1 row-cols-md-4 g-4">
+
+    </div>
+
+    <!-- js file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+<script src="js/meal.js"></script>
 </body>
 
 </html>
